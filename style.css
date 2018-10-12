@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #DDEEF3;
+    
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  border:3px solid black;
+  display: inline-block;
+  padding: 30px 200px;
+  box-shadow: 5px 10px #888888;
+}
+.intro-paragraph {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+.intro-paragraph p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+.link {
+  padding-bottom: 20px;
+}
+
+.food_pic {
+  width: 100%;
+}
+
+.thai_restaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  
+}
+
+.restaurant {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: black;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .thai_restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .thai_restaurants {
+    grid-template-columns: 1fr;
+  }
+}
